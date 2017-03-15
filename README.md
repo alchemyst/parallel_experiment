@@ -4,6 +4,12 @@ This is an experiment in generating queues for long-running tasks.
 
 The job consists of touching a corresponding .out file for a large number of .inp files in `data`, simulating calling some simulation code on input files.
 
+If you have just cloned this repository run
+
+    python builddata.py
+    
+to create this directory.
+
 The Python file which actually does this work is called `runner.py`:
 
     import sys
